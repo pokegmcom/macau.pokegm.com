@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-MO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲特色介紹 - 像素精靈PokeHunt | 復古像素怪物收集養成遊戲</title>
+    <meta name="description" content="探索像素精靈PokeHunt的獨特遊戲特色：創新回合制戰鬥系統、精美復古像素畫風、龐大開放世界自由探索、數百種怪物收集養成、刺激道館挑戰和豐富社交互動。體驗經典RPG的無限魅力，開啟您的怪物訓練師傳奇冒險之旅！">
+    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 遊戲特色, 像素風格, 創新玩法">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="像素精靈" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold text-primary">像素精靈</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">首頁</a>
+                    <a href="features.html" class="text-primary font-medium">遊戲特色</a>
+                    <a href="guides.html" class="text-gray-700 hover:text-primary transition-colors">遊戲攻略</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary transition-colors">兌換碼</a>
+                    <a href="articles.html" class="text-gray-700 hover:text-primary transition-colors">文章列表</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-accent text-dark px-4 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors">
+                        <i class="fa fa-download mr-2"></i>立即下載
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-dark text-2xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-primary transition-colors">首頁</a>
+                <a href="features.html" class="block text-primary font-medium">遊戲特色</a>
+                <a href="guides.html" class="block text-gray-700 hover:text-primary transition-colors">遊戲攻略</a>
+                <a href="codes.html" class="block text-gray-700 hover:text-primary transition-colors">兌換碼</a>
+                <a href="articles.html" class="block text-gray-700 hover:text-primary transition-colors">文章列表</a>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="block bg-accent text-dark px-4 py-2 rounded-lg font-medium text-center">
+                    <i class="fa fa-download mr-2"></i>立即下載
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-center mb-12 text-primary">遊戲特色</h1>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="card-hover bg-white rounded-2xl shadow-lg p-8">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa fa-gamepad text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">創新戰鬥系統</h3>
+                <p class="text-gray-600">採用獨特的即時戰鬥系統，結合回合制和動作遊戲優點，讓戰鬥更加刺激和策略性。</p>
+            </div>
+            
+            <div class="card-hover bg-white rounded-2xl shadow-lg p-8">
+                <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa fa-picture-o text-3xl text-secondary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">精美像素畫風</h3>
+                <p class="text-gray-600">復古像素風格搭配現代光影效果，打造獨特的視覺體驗，重溫童年回憶。</p>
+            </div>
+            
+            <div class="card-hover bg-white rounded-2xl shadow-lg p-8">
+                <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa fa-globe text-3xl text-accent"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">龐大遊戲世界</h3>
+                <p class="text-gray-600">開放世界設計，多樣化的地圖場景，從森林到沙漠，從雪山到海洋，等你探索。</p>
+            </div>
+            
+            <div class="card-hover bg-white rounded-2xl shadow-lg p-8">
+                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa fa-users text-3xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">社交互動</h3>
+                <p class="text-gray-600">與好友組隊冒險，參與公會戰，交易系統讓你與其他玩家互動更緊密。</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">更多精彩特色</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-paw text-3xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">800+精靈</h4>
+                    <p class="text-sm opacity-90">收集超過800種獨特精靈，每種都有不同的技能和特性</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-trophy text-3xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">PvP對戰</h4>
+                    <p class="text-sm opacity-90">挑戰其他玩家，在全球排行榜上提升排名</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-home text-3xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">建造基地</h4>
+                    <p class="text-sm opacity-90">創建屬於自己的基地，佈置獨特的建築和裝飾</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-purple-600 transition-colors">
+                <i class="fa fa-download mr-2"></i>立即下載
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">像素精靈</h3>
+                    <p class="text-gray-400">復古像素畫風的經典怪物收集養成遊戲。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速連結</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">首頁</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">聯繫我們</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-discord mr-2"></i>
+                            <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">下載遊戲</h3>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-accent text-dark px-4 py-2 rounded-lg font-medium">
+                        <i class="fa fa-download mr-2"></i>立即下載
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 像素精靈. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-MO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲攻略大全 - 像素精靈PokeHunt | 新手入門與進階技巧指南</title>
+    <meta name="description" content="像素精靈PokeHunt完整遊戲攻略大全，涵蓋新手入門指南、職業選擇建議、副本攻略、戰鬥技巧、怪物培養策略和屬性相剋原理。從零開始的詳細教學，幫助您快速上手並成為頂尖怪物訓練大師的必備完整指南！">
+    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 遊戲攻略, 新手入門, 職業選擇">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .guide-card {
+            transition: all 0.3s ease;
+        }
+        .guide-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="像素精靈" class="h-10 w-auto">
+                    <span class="ml-2 text-xl font-bold text-primary">像素精靈</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">首頁</a>
+                    <a href="features.html" class="text-gray-700 hover:text-primary transition-colors">遊戲特色</a>
+                    <a href="guides.html" class="text-primary font-medium">遊戲攻略</a>
+                    <a href="codes.html" class="text-gray-700 hover:text-primary transition-colors">兌換碼</a>
+                    <a href="articles.html" class="text-gray-700 hover:text-primary transition-colors">文章列表</a>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="bg-accent text-dark px-4 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors">
+                        <i class="fa fa-download mr-2"></i>立即下載
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-dark text-2xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-700 hover:text-primary transition-colors">首頁</a>
+                <a href="features.html" class="block text-gray-700 hover:text-primary transition-colors">遊戲特色</a>
+                <a href="guides.html" class="block text-primary font-medium">遊戲攻略</a>
+                <a href="codes.html" class="block text-gray-700 hover:text-primary transition-colors">兌換碼</a>
+                <a href="articles.html" class="block text-gray-700 hover:text-primary transition-colors">文章列表</a>
+                <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="block bg-accent text-dark px-4 py-2 rounded-lg font-medium text-center">
+                    <i class="fa fa-download mr-2"></i>立即下載
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-center mb-4 text-primary">遊戲攻略</h1>
+        <p class="text-center text-gray-600 mb-12">學習成為頂尖精靈訓練師所需的一切知識！</p>
+        
+        <div class="space-y-8">
+            <div class="guide-card bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-rocket text-2xl text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">新手入門指南</h2>
+                </div>
+                <p class="text-gray-600 mb-4">剛開始遊戲不知道怎麼玩？這裡有詳細的新手教程幫助你快速上手。</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>創建角色和選擇初始精靈</li>
+                    <li>了解基礎操作和界面</li>
+                    <li>完成新手任務獲取獎勵</li>
+                    <li>學習戰鬥系統基礎</li>
+                    <li>探索初始地圖並捕捉新精靈</li>
+                </ul>
+            </div>
+            
+            <div class="guide-card bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-users text-2xl text-secondary"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">職業選擇建議</h2>
+                </div>
+                <p class="text-gray-600 mb-4">遊戲中有多種職業可供選擇，每種職業都有獨特的技能和玩法。</p>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-light p-5 rounded-xl">
+                        <h4 class="font-bold mb-2 text-lg">戰士</h4>
+                        <p class="text-sm text-gray-600 mb-3">高防禦高血量，適合新手</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• 高HP和強大的防禦力</li>
+                            <li>• 容易在戰鬥中生存</li>
+                            <li>• 適合新手玩家</li>
+                        </ul>
+                    </div>
+                    <div class="bg-light p-5 rounded-xl">
+                        <h4 class="font-bold mb-2 text-lg">法師</h4>
+                        <p class="text-sm text-gray-600 mb-3">高魔法輸出，群體傷害</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• 強大的魔法傷害</li>
+                            <li>• 範圍攻擊能力</li>
+                            <li>• 適合PvE戰鬥</li>
+                        </ul>
+                    </div>
+                    <div class="bg-light p-5 rounded-xl">
+                        <h4 class="font-bold mb-2 text-lg">刺客</h4>
+                        <p class="text-sm text-gray-600 mb-3">高爆發，適合PVP</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• 高爆擊傷害</li>
+                            <li>• 快速攻擊速度</li>
+                            <li>• 適合有經驗的玩家</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-accent/20 rounded-full flex items-center justify-center">
+                        <i class="fa fa-paw text-2xl text-accent"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">精靈捕捉指南</h2>
+                </div>
+                <p class="text-gray-600 mb-4">有效捕捉精靈的技巧和策略，讓你輕鬆組建強大的隊伍。</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold mb-3">捕捉技巧</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-check text-secondary mt-1"></i>
+                                <span>將目標精靈的HP降至紅色狀態</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-check text-secondary mt-1"></i>
+                                <span>使用睡眠或麻痹等狀態效果</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-check text-secondary mt-1"></i>
+                                <span>使用適合的精靈球</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-check text-secondary mt-1"></i>
+                                <span>攜帶足夠的精靈球</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-3">稀有精靈位置</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-map-marker text-primary mt-1"></i>
+                                <span>黑暗洞穴 - 黑暗系精靈</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-map-marker text-primary mt-1"></i>
+                                <span>隱藏森林 - 草系精靈</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa fa-map-marker text-primary mt-1"></i>
+                                <span>雪山 - 冰系精靈</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-trophy text-2xl text-primary"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">戰鬥策略</h2>
+                </div>
+                <p class="text-gray-600 mb-4">掌握戰鬥技巧，戰勝強大的對手。</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-light p-5 rounded-xl">
+                        <h4 class="font-bold mb-3">PvE戰鬥</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• 專注於對手的元素弱點</li>
+                            <li>• 攜帶足夠的治療物品</li>
+                            <li>• 培養多種類型的精靈</li>
+                            <li>• 挑戰Boss前提升等級</li>
+                        </ul>
+                    </div>
+                    <div class="bg-light p-5 rounded-xl">
+                        <h4 class="font-bold mb-3">PvP戰鬥</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li>• 組建平衡的隊伍</li>
+                            <li>• 學習當前流行戰術</li>
+                            <li>• 使用干擾策略</li>
+                            <li>• 練習預測技巧</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-card bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center">
+                        <i class="fa fa-star text-2xl text-secondary"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-primary">精靈訓練技巧</h2>
+                </div>
+                <p class="text-gray-600 mb-4">優化你的精靈成長，發揮最大潛力。</p>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="text-center p-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa fa-heart text-primary"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">神奇糖果</h4>
+                        <p class="text-sm text-gray-600">使用糖果快速提升等級</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa fa-refresh text-secondary"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">進化</h4>
+                        <p class="text-sm text-gray-600">在適當的時機進化精靈以獲得最佳屬性</p>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i class="fa fa-diamond text-accent"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">個體值與努力值</h4>
+                        <p class="text-sm text-gray-600">訓練個體值以獲得最大性能</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-gray-600 mb-4">準備好開始你的冒險了嗎？</p>
+            <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-purple-600 transition-colors">
+                <i class="fa fa-download mr-2"></i>立即下載
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">像素精靈</h3>
+                    <p class="text-gray-400">復古像素畫風的經典怪物收集養成遊戲。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速連結</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">首頁</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">聯繫我們</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-discord mr-2"></i>
+                            <a href="https://discord.gg/Pvkxz96V" class="text-gray-400 hover:text-white">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">下載遊戲</h3>
+                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="inline-block bg-accent text-dark px-4 py-2 rounded-lg font-medium">
+                        <i class="fa fa-download mr-2"></i>立即下載
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 像素精靈. 版權所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
